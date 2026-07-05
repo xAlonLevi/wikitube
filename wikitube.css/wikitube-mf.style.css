@@ -178,7 +178,7 @@ body {
 
 /* ---------PC------------- */
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
 
     .main-header {
         margin-left: 15px;
@@ -276,7 +276,9 @@ body {
     .main-player-container {
         display: grid;
         justify-content: start;
+        
     }
+
 
     .wiki-Header-1,
     .wiki-Header-2,
