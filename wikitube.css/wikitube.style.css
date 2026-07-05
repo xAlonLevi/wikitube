@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+/* move to css util: */
+
+:root {
+    --background-clr: rgb(221, 107, 45);
+    --clr-scheme-1: rgb(8, 25, 133);
+    --clr-scheme-2: rgb(76, 87, 158);
+    --clr-scheme-3: rgb(218, 151, 17);
+    --font-size-1: 38px;
+    --font-size-2: 18px;
+}
+
+
+/*------------------------*/
+
+body {
+    background-color: var(--background-clr);
+    margin: 0;
+}
+
+.main-header {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+}
+
+.wikiVideo-container {
+    margin-left: 60px
+}
+
+.wiki-Header-1,
+.wiki-snippet-1 {
+    font-size: var(--font-size-2);
+    color: var(--clr-scheme-1);
+    text-decoration: underline;
+}
+
+.wiki-Header-1 {
+    font-size: var(--font-size-1);
+}
+
+.wiki-Header-2 {
+    font-size: var(--font-size-1);
+    color: var(--clr-scheme-2);
+}
+
+.wiki-snippet-2 {
+    font-size: var(--font-size-2);
+    color: var(--clr-scheme-2);
+}
+
+.searchResSuggestions {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    list-style: none;
+    margin: 0px;
+    padding-left: 0;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(69, 67, 65);
+    max-height: 135px;
+    /* margin-bottom: 20px; */
+    /* margin: 15px; */
+    margin-left: 15px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.suggestion img {
+    /* max-width: 200px;
+    padding-left: 10px; */
+    /* flex-shrink: 0; */
+    flex: 0 0 200px;
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+
+.suggestion p {
+    flex: 1;
+    font-size: var(--font-size-2);
+    color: var(--clr-scheme-3);
+    min-width: 0;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+
+}
