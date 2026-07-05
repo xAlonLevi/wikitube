@@ -178,7 +178,7 @@ body {
 
 /* ---------PC------------- */
 
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
 
     .main-header {
         margin-left: 15px;
