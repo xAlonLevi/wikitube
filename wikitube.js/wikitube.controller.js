@@ -27,7 +27,9 @@ function renderWiki(wikidata) {
         <h2 class="wiki-Header-1">${wikidata[0].title}</h2>
         <p class="wiki-snippet-1">${wikidata[0].snippet}</p>
         <h2 class="wiki-Header-2">${wikidata[1].title}</h2>
-        <p class="wiki-snippet-2">${wikidata[1].snippet}</p>`
+        <p class="wiki-snippet-2">${wikidata[1].snippet}</p>
+        <h2 class="wiki-Header-3">${wikidata[2].title}</h2>
+        <p class="wiki-snippet-3">${wikidata[2].snippet}</p>`
 
     elWikipedia.innerHTML = strHTML
 }
