@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikitube</title>
+    <!-- <link rel="stylesheet" href="wikitube.css/wikitube.style.css"> -->
+    <link rel="stylesheet" href="wikitube.css/wikitube-mf.style.css">
+</head>
+
+<body onload="onInit()">
+
+    <header class="main-header">
+        <h1 class="logo">wikitube</h1>
+        <form class="search-bar-container" onsubmit="onSearch(event)">
+            <input class="search-bar" type="search" placeholder="Search">
+            <button class="search-btn">Search</button>
+        </form>
+    </header>
+
+    <main class="main-container">
+
+        <ol class="searchResSuggestions">
+            <!-- <li class="suggestion" onclick="onSelectedVideo(this)">
+                <img src="" alt="">
+                <p></p>
+            </li> -->
+        </ol>
+
+        <section class="wikiVideo-container">
+            <div class="main-player-container">
+                <iframe class="youtube-player" width="580" height="455" src="" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="wiki-section">
+                <!-- <h2></h2>
+                <p></p>
+                <h2></h2>
+                <p></p> .....-->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- <footer>all rights reserved</footer> -->
+
+    <script src="lib/axios.js"></script>
+
+    <script src="wikitube.js/wikitube.service.js"></script>
+    <script src="wikitube.js/wikitube.controller.js"></script>
+</body>
+
+</html>
