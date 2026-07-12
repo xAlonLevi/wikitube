@@ -27,9 +27,7 @@ function renderWiki(wikidata) {
         <h2 class="wiki-Header-1">${wikidata[0].title}</h2>
         <p class="wiki-snippet-1">${wikidata[0].snippet}</p>
         <h2 class="wiki-Header-2">${wikidata[1].title}</h2>
-        <p class="wiki-snippet-2">${wikidata[1].snippet}</p>
-        <h2 class="wiki-Header-3">${wikidata[2].title}</h2>
-        <p class="wiki-snippet-3">${wikidata[2].snippet}</p>`
+        <p class="wiki-snippet-2">${wikidata[1].snippet}</p>`
 
     elWikipedia.innerHTML = strHTML
 }
@@ -75,3 +73,55 @@ function onSelectedVideo(VideoIdx) {
 
 
 
+// const videos = res.data.items.map(video => ({
+//                 id: video.id.videoId,
+//                 title: video.snippet.title,
+//                 description: video.snippet.description,
+//                 imgUrl: video.snippet.thumbnails.medium.url
+//             }))
+
+
+
+// AIzaSyCMmXhfx51eClQ2acCXpdn3fu6JA6F5TH8
+
+// array.map((element, index, array) => {
+//     ...
+// })
+// element= curr obj,
+// index= curr position, 0,1,2...
+// arr= entire complete array
+
+
+// for (let i = 1; i < youtubeData.length; i++) {
+    //     let strHTML += `
+    //         <li 
+    //             class="suggestion-${i}" 
+    //             onclick="onSelectedVideo(this)">
+    //             <img src="" alt="">
+    //             <p>test</p>
+    //         </li>
+    //     `
+    
+    // }
+    // IF NEEDED:
+    // elPlayer.width =
+    // elPlayer.height =
+    // ---------------------------------
+    
+
+    // OPTION 2: INNER.HTML: PROBLEMATIC,
+    // RELOADS ENTIRE CLASS ON SEARCH????
+    // --------------------------------------------
+    // const elPlayerContainer = document.querySelector('.main-player-container')
+    // const strHTML = `
+    //     <iframe
+    //         class="youtube-player"
+    //         width="560"
+    //         height="315"
+    //         src="https://www.youtube.com/embed/${youtubeData[0].id}"
+    //         allowfullscreen>
+    //     </iframe>`
+    
+    // elPlayerContainer.innerHTML = strHTML
+    // console.log(elPlayerContainer)
+    // ------------------------------------------
