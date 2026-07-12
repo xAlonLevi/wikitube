@@ -1,7 +1,7 @@
 'use strict'
 
 const YT_KEY = 'AIzaSyCMmXhfx51eClQ2acCXpdn3fu6JA6F5TH8'
-const videoURL = `https://www.youtube.com/watch?v=`
+// const videoURL = `https://www.youtube.com/watch?v=`
 
 let gWikiCache = {}
 let gYoutubeCache = {}
@@ -55,29 +55,3 @@ function fetchYoutubeData(searchTerm) {
         })
 }
 
-// function
-// https://www.youtube.com/embed/iNn3VFSq62k
-
-
-//  return Promise.resolve(gWikiCache[searchTerm])
-
-
-
-
-// function getSearchTerm() {
-//     return gSearchTerm
-// }
-// // console.log(gSearchTerm);
-
-// https://en.wikipedia.org/w/api.php?origin=*&action=query&list=search&srsearch=beatles&format=json
-
-// function ask() {
-// 	console.log('Hi from ans service using axios...')
-
-//     return axios.get('https://yesno.wtf/api')
-//         .then(res => res.data)
-//         .catch(err => {
-//             console.log(err)
-//             throw 'Opps, something went wrong'
-//         })
-// }

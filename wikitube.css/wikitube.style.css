@@ -54,12 +54,14 @@ body {
     font-size: var(--font-size-1);
 }
 
-.wiki-Header-2 {
+.wiki-Header-2,
+.wiki-header-3 {
     font-size: var(--font-size-1);
     color: var(--clr-scheme-2);
 }
 
-.wiki-snippet-2 {
+.wiki-snippet-2,
+.wiki-snippet-3 {
     font-size: var(--font-size-2);
     color: var(--clr-scheme-2);
 }
